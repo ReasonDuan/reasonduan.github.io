@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="main.css">
+<script type="text/javascript" src="main.js"></script>
+<meta name="viewport" content="width=500, height=750, initial-scale=0.64"> 
+<script src="./duanyuhan_files/jweixin-1.0.0.js"></script>
+<script>
+
+            var module_inits = [];
+
+            var upload_permission = true;
+            var atkname = 'huali';
+
+            wx.config({
+                debug     : false,
+                appId     : 'wx17512612411a3882',
+                timestamp : 10000,
+                nonceStr  : 'hellohuali',
+                signature : '81ed3ee35d915f3831ee2052f788c68b42b98581',
+                jsApiList : [
+                    'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareQZone', 'closeWindow', 'hideAllNonBaseMenuItem', 'showMenuItems', 'showAllNonBaseMenuItem', 'chooseImage', 'uploadImage']
+                });
+            
+            function load_init_modules()
+            {
+                for(var i=0; i<module_inits.length; i++)
+                {
+                    module_inits[i]();
+                }
+            }
+
+            function call_me(fun)
+            {
+                module_inits.push(fun);
+            }
+
+            var ua = navigator.userAgent.toLowerCase();  
+
+            if(ua.match(/MicroMessenger/i) == 'micromessenger')
+            {  
+                wx.ready(load_init_modules);
+            }
+            else
+            {
+                onload = load_init_modules;
+            }
+
+</script>
+
+<script>
+var slider_images_url = [];
+/*
+slider_images_url.push('http://qnimg.kagirl.cn/li_1189138967660?imageMogr2/auto-orient/');
+slider_images_url.push('http://qnimg.kagirl.cn/li_1189136878911?imageMogr2/auto-orient/');
+slider_images_url.push('http://qnimg.kagirl.cn/li_1189136799965?imageMogr2/auto-orient/');
+slider_images_url.push('http://qnimg.kagirl.cn/li_1189136638394?imageMogr2/auto-orient/');
+slider_images_url.push('http://qnimg.kagirl.cn/li_1189136575416?imageMogr2/auto-orient/');
+slider_images_url.push('http://qnimg.kagirl.cn/li_1189136833542?imageMogr2/auto-orient/');
+slider_images_url.push('http://qnimg.kagirl.cn/li_1189136912430?imageMogr2/auto-orient/');
+slider_images_url.push('http://qnimg.kagirl.cn/li_1189136978501?imageMogr2/auto-orient/');
+slider_images_url.push('http://qnimg.kagirl.cn/li_1189137003789?imageMogr2/auto-orient/');
+*/
+
+slider_images_url.push('./duanyuhan_files/li_1189138967660.jpg');
+slider_images_url.push('./duanyuhan_files/li_1189136878911.jpg');
+slider_images_url.push('./duanyuhan_files/li_1189136799965.jpg');
+slider_images_url.push('./duanyuhan_files/li_1189136638394.jpg');
+slider_images_url.push('./duanyuhan_files/li_1189136575416.jpg');
+slider_images_url.push('./duanyuhan_files/li_1189136833542.jpg');
+slider_images_url.push('./duanyuhan_files/li_1189136912430.jpg');
+slider_images_url.push('./duanyuhan_files/li_1189136978501.jpg');
+slider_images_url.push('./duanyuhan_files/li_1189137003789.jpg');
+
+
+
+
+var date = 20170123;
+var zan_num = 0;
+var e_bookid = 'dD2nhG888Uz84dcuZKi8izkk8RX3FqDXPVmwpJ5UxaM';
+var e_desc = {"de":"\u6211\u662f\u840c\u5b9d\u679c\u679c"}["de"];
+var e_openid = null;
+var e_scene = 'jiniance';
+var editmode = false;
+var wxid = 'liti';
+var shareid = '';
+var guanzhu_url = 'http://mp.weixin.qq.com/s?__biz=MzA3NzkyNDI0Mg==&mid=549687116&idx=1&sn=702ab0b65287ac4a0d4b7a08d6c42a5a#rd';
+var words = {"li_1189136638394.jpg":"\u731c\u731c\u6211\u5728\u60f3\u4ec0\u4e48","li_1189138967660.jpg":"\u6211\u662f\u840c\u5b9d\u679c\u679c \u8fd9\u662f\u6211\u7684\u7b2c\u4e00\u7167\u7247","li_1189136833542.jpg":"\u6211\u633a\u6587\u9759\u7684","li_1189136878911.jpg":"\u79c0\u4e00\u4e0b\u6211\u7684\u53cc\u773c\u76ae\u563f\u563f","li_1189136799965.jpg":"\u8ba9\u5927\u5bb6\u90fd\u6cbe\u6cbe\u559c\u6c14","li_1189136575416.jpg":"\u6211\u5148\u4f11\u606f\u4e00\u4e0b","li_1189136912430.jpg":"\u5c0f\u811a\u4e2b","li_1189137003789.jpg":"\u6765\u548c\u6211\u804a\u5929\u5427","li_1189136978501.jpg":"\u6211\u5728\u505a\u4e00\u4e2a\u7f8e\u597d\u7684\u68a6"};
+var app = '';
+var onmake = '';
+var editdesc = '1';
+var e_music_url = './duanyuhan_files/qinqinwodebaobei_x.mp3';
+              var e_music_title = '';
+              var tbssaveoff = false;
+              var isguangchang = '';
+              var isshow = '';
+              var gotomake = 'make';
+              var istiaozhuan = '';
+             </script>
+<title>段语晗</title>
+</head>
+<body>
+    <div id="container">
+    <img src="./duanyuhan_files/bg.jpg">
+    <!-- <img src='https://qnphoto.kagirl.cn/pic/jiniance/1.jpg'> -->
+    <div id="page11h" style="display: none; transform-origin: 50% 50% 0px; animation: page11hout 1.2s ease-in both;">
+        <div style="position:absolute;width:368px;height:256px;top:7px;left:7px;overflow:hidden;">
+            <img id="img11h" style="position:absolute">
+            <span id="word11h" class="showwords"></span>
+        </div>
+    </div>
+    <div id="page11s" style="display: block; transform-origin: 50% 50% 0px; animation: page11hout 1.2s ease-in both;">
+        <div style="position:absolute;height:368px;width:256px;top:7px;left:7px;overflow:hidden;">
+            <img id="img11s" style="position: absolute; left: -10px; width: 276px; height: 368px; top: 0px;" src="./duanyuhan_files/li_1189136912430.jpg">
+            <span id="word11s" class="showwords" style="font-size: 24px;">小脚丫</span>
+        </div>
+    </div>
+    <div id="page12h" style="display: block; transform-origin: 50% 50% 0px; animation: page12hout 0.8s ease-in both;">
+        <div style="position:absolute;height:262px;width:383px;top:7px;left:7px;overflow:hidden;">
+            <img id="img12h" style="position: absolute; left: 0px; width: 383px; height: 287.25px; top: -12.625px;" src="./duanyuhan_files/li_1189136978501.jpg">
+            <span id="word12h" class="showwords" style="font-size: 24px;">我在做一个美好的梦</span>
+        </div>
+    </div>
+    <div id="page12s" style="display: none; transform-origin: 50% 50% 0px; animation: page12hout 0.8s ease-in both;">
+        <div style="position:absolute;width:262px;height:383px;top:7px;left:7px;overflow:hidden;">
+            <img id="img12s" style="position: absolute; top: 0px; height: 383px; width: 287.25px; left: -12.625px;" src="./duanyuhan_files/li_1189136878911.jpg">
+            <span id="word12s" class="showwords" style="font-size: 19px;">秀一下我的双眼皮嘿嘿</span>
+        </div>
+    </div>
+    <div id="word1" style="display: block; animation: word1move 1.5s linear both;">
+        <img style="position:absolute;-webkit-animation: word1 0.8s linear infinite alternate" src="./duanyuhan_files/Aut.png">
+    </div>
+    <div id="word2" style="display: none; animation: word2move 1s linear both;">
+        <img style="position:absolute;-webkit-animation: word2 0.8s linear infinite alternate" src="./duanyuhan_files/Aut2.png">
+    </div>
+    <div id="yezi" style="display: block; animation: yeziout 1s linear both;">
+        <div id="yezi1">
+            <img id="yeying" src="./duanyuhan_files/hyy.png">
+            <img src="./duanyuhan_files/hy.png">
+        </div>
+    </div>
+    <div id="page32h" style="display: none; animation: page32hout 2s ease-in both;">
+        <div style="position:absolute;width:354px;height:249px;top:7px;left:7px;overflow:hidden;">
+            <img id="img32h" style="position: absolute; left: 0px; width: 354px; height: 265.5px; top: -8.25px;" src="./duanyuhan_files/li_1189136978501.jpg">
+            <span id="word32h" class="showwords" style="font-size: 24px;">我在做一个美好的梦</span>
+        </div>
+    </div>
+    <div id="page31h" style="display: none; animation: page31hout 1.6s ease-in both;">
+        <div style="position:absolute;width:354px;height:249px;top:7px;left:7px;overflow:hidden;">
+            <img id="img31h" style="position:absolute">
+            <span id="word31h" class="showwords"></span>
+        </div>
+    </div>
+    <div id="page32s" style="display: block; animation: page32hout 2s ease-in both;">
+        <div style="position:absolute;width:247px;height:333px;top:7px;left:7px;overflow:hidden;">
+            <img id="img32s" style="position: absolute; top: 0px; height: 333px; width: 249.75px; left: -1.375px;" src="./duanyuhan_files/li_1189136575416.jpg">
+            <span id="word32s" class="showwords" style="font-size: 19px;">我先休息一下</span>
+        </div>
+    </div>
+    <div id="page31s" style="display: block; animation: page31hout 1.6s ease-in both;">
+        <div style="position:absolute;height:354px;width:249px;top:7px;left:7px;overflow:hidden;">
+            <img id="img31s" style="position: absolute; top: 0px; height: 354px; width: 265.5px; left: -8.25px;" src="./duanyuhan_files/li_1189136638394.jpg">
+            <span id="word31s" class="showwords" style="font-size: 19px;">猜猜我在想什么</span>
+        </div>
+    </div>
+    <img id="paper" style="display: block; animation: paperout 1.5s ease-in both;" src="./duanyuhan_files/zhip.png">
+    <img id="pan" style="display: block; animation: panout 1.5s ease-in both;" src="./duanyuhan_files/bi.png">
+    <div id="page2s" style="display: block; animation: page2sin 1.5s ease-out both;">
+        <div style="position:absolute;width:397px;height:561px;top:7px;left:7px;overflow:hidden;">
+            <img id="img2s" style="position: absolute; top: 0px; height: 561px; width: 420.75px; left: -11.875px;" src="./duanyuhan_files/li_1189137003789.jpg">
+            <span id="word2s" class="showwords" style="font-size: 19px;">来和我聊天吧</span>
+        </div>
+    </div>
+    <div id="page2h" style="display: none; animation: page2sin 1.5s ease-out both;">
+        <div style="position:absolute;width:446px;height:286px;top:7px;left:7px;overflow:hidden;">
+            <img id="img2h" style="position: absolute; left: 0px; width: 446px; height: 334.5px; top: -24.25px;" src="./duanyuhan_files/li_1189136833542.jpg">
+            <span id="word2h" class="showwords" style="font-size: 24px;">我挺文静的</span>
+        </div>
+    </div>
+    <div id="hudie" style="display: block; animation: hudie 6s linear both;">
+        <img id="chishangying" src="./duanyuhan_files/chiying01.png" style="left: -16px; top: 14px; transform-origin: 50% 100% 0px; opacity: 0.6; animation: chibang 6s linear infinite;">
+        <img src="./duanyuhan_files/shenying.png" style="left:6px;top:69px;opacity:0.6">
+        <img id="chixiaying" src="./duanyuhan_files/chiying.png" style="left: -15px; top: 90px; transform-origin: 50% 0% 0px; opacity: 0.6; animation: chibang 6s linear infinite;">
+
+        <img id="chishang" src="./duanyuhan_files/chi01.png" style="left:0px;top:0px;-webkit-transform-origin: 50% 100%;-webkit-animation:chibang 6s linear infinite">
+        <img src="./duanyuhan_files/shenzi.png" style="left:22px;top:57px;">
+        <img id="chixia" src="./duanyuhan_files/chi.png" style="left:0px;top:78px;-webkit-transform-origin: 50% 0%;-webkit-animation:chibang 6s linear infinite">
+
+    </div>
+    <div id="page4h" style="display: block; animation: page4hout 1s ease-in both;">
+        <div style="position:absolute;width:446px;height:324px;top:7px;left:7px;overflow:hidden;">
+            <img id="img4h" style="position: absolute; left: 0px; width: 446px; height: 334.5px; top: -6.25px;" src="./duanyuhan_files/li_1189136833542.jpg">
+            <span id="word4h" class="showwords" style="font-size: 24px;">我挺文静的</span>
+        </div>
+    </div>
+    <div id="page4s" style="display: none; animation: page4hout 1s ease-in both;">
+        <div style="position:absolute;width:322px;height:495px;top:7px;left:7px;overflow:hidden;">
+            <img id="img4s" style="position: absolute; top: 0px; height: 495px; width: 371.25px; left: -24.625px;" src="./duanyuhan_files/li_1189137003789.jpg">
+            <span id="word4s" class="showwords" style="font-size: 19px;">来和我聊天吧</span>
+        </div>
+    </div>
+    <img id="cafe" style="display: block; animation: cafeout 1s ease-in both;" src="./duanyuhan_files/coffee.png">
+    <div id="dou1" style="display: block; animation: dou1out 1s ease-in both;">
+        <img id="dou11" src="./duanyuhan_files/dou.png" style="animation: douzhuan 1.3s linear 0.5s 1 both;">
+    </div>
+    <div id="dou2" style="display: block; animation: dou2out 1s ease-in both;">
+        <img id="dou22" src="./duanyuhan_files/dou.png" style="animation: douzhuan 1s linear 0.7s 1 both;">
+    </div>
+    <img id="qi" src="./duanyuhan_files/qi.png">
+
+    <div id="pagetitle" style="display: block; animation: titlefadeout 0.5s linear 1.5s both;">
+        <div id="title1" style="display: block; animation: title1 1.2s linear both;">
+            <div id="title11" style="display: block; animation: title11 1.2s linear both;">
+                <div id="pageword1" style="display: block; animation: pageword1 1s linear 0s both;"><div id="pagewordin1" style="display: block; animation: pagewordin1 1s linear 0s both;"><div id="pagewordin11"><div id="titleword1" style="display:table-cell;vertical-align: middle;padding:20px;">我是萌宝果果，这是我的相册</div></div></div></div>
+                <div id="pageword2" style="display: block; animation: pagewordin1 1s linear 2s both;"><div id="pagewordin2" style="display: block; animation: pageword1 1s linear 2s both;"><div id="pagewordin22"><div id="titleword2" style="display:table-cell;vertical-align: middle;padding:20px;">我是萌宝果果，这是我的相册</div></div></div></div>
+            </div>
+        </div>
+        <div id="titleline" style="background-color: rgb(255, 255, 255); position: absolute; height: 3px; top: 350px; width: 500px; transform-origin: 0% 0% 0px; transform: scale(0, 1); animation: titleline3 1.2s linear both;"></div>
+    </div>
+
+</div>
+
+
+<script>
+function id(name)
+{
+    return document.getElementById(name);
+}
+var image_size_width=[];
+var image_size_height=[];
+var image_url_index=0;
+var have_num = 0;
+var error_num = 0;
+var canshow = true;
+var reshow = false;
+var timeout1;
+var timeout2;
+var timeout3;
+var timeout4;
+var timeout5;
+var timeout6;
+var timeout7;
+var timeout8;
+
+var begin_titletime;
+function loadimages()
+{
+    id('pagetitle').style.display = 'none';
+    id('pageword1').style.display = 'none';
+    id('pageword2').style.display = 'none';
+    id('pagewordin1').style.display = 'none';
+    id('pagewordin2').style.display = 'none';
+    id('title1').style.display = 'none';
+    id('title11').style.display = 'none';
+    id('pagetitle').style.webkitAnimation = '';
+    id('pageword1').style.webkitAnimation = '';
+    id('pageword2').style.webkitAnimation = '';
+    id('pagewordin1').style.webkitAnimation = '';
+    id('pagewordin2').style.webkitAnimation = '';
+    id('title1').style.webkitAnimation = '';
+    id('title11').style.webkitAnimation = '';
+    showtitle();
+    reshow = false;
+    image_size_width=[];
+    image_size_height=[];
+    Onload_imgs_url=[];
+    image_url_index=0;
+    have_num = 0;
+    error_num = 0;
+
+    clearTimeout(timeout1);
+    clearTimeout(timeout2);
+    clearTimeout(timeout3);
+    clearTimeout(timeout4);
+    clearTimeout(timeout5);
+    clearTimeout(timeout6);
+    clearTimeout(timeout7);
+    // clearTimeout(timeout8);
+
+    id('page11h').style.display = 'none';
+    id('page11s').style.display = 'none';
+    id('page12h').style.display = 'none';
+    id('page12s').style.display = 'none';
+    id('page2h').style.display = 'none';
+    id('page2s').style.display = 'none';
+    id('page31h').style.display = 'none';
+    id('page32h').style.display = 'none';
+    id('page31s').style.display = 'none';
+    id('page32s').style.display = 'none';
+    id('page4h').style.display = 'none';
+    id('page4s').style.display = 'none';
+    id('page4s').style.display = 'none';
+    id('cafe').style.display = 'none';
+    id('dou1').style.display = 'none';
+    id('dou2').style.display = 'none';
+    id('pan').style.display = 'none';
+    id('paper').style.display = 'none';
+    id('hudie').style.display = 'none';
+    id('yezi').style.display = 'none';
+    id('word1').style.display = 'none';
+    id('word2').style.display = 'none';
+    canshow = true;
+
+    bl_keepload = 'first';
+    step_load();      
+}
+
+//每次执行加载后6张图片
+var bl_keepload = 'first';
+var step_loadnum = 6;
+function step_load()
+{
+    var load_num = 0
+    //初步加载X张
+    if(image_url_index  == 0 && bl_keepload == 'first')
+    {
+        console.log('loading continue');
+        if(slider_images_url.length > step_loadnum)
+        {
+            load_num = step_loadnum;
+            bl_keepload = 'next';
+        }
+        else
+        {
+            load_num = slider_images_url.length;
+            bl_keepload = 'end';
+        }
+        for(var i = 0; i< load_num; i++)
+        {
+            var img=new Image();
+            img.index=i;
+            img.src=slider_images_url[i];
+            img.onload=image_onload;
+            img.onerror= image_onerror;
+            Onload_imgs_url[i] = 'loading';
+        }
+    }
+    else if(bl_keepload == 'end')
+    {
+        return;
+    }
+    else
+    {
+         console.log('loading continue');
+        if(slider_images_url.length - image_url_index >step_loadnum*2)
+        { 
+            load_num = step_loadnum;
+        }
+        else
+        {
+            load_num = slider_images_url.length - image_url_index - step_loadnum;
+            bl_keepload = 'end';
+        }
+        for(var i = image_url_index +step_loadnum; i< image_url_index + step_loadnum + load_num; i++)
+        {
+            var img=new Image();
+            img.index=i;
+            img.src=slider_images_url[i];
+            img.onload=image_onload;
+            img.onerror= image_onerror;
+            Onload_imgs_url[i] = 'loading';
+        }
+    }
+
+}
+function image_onerror(event)
+{
+    var img = event.target;
+    var index = img.index;
+    if(index<step_loadnum)
+        error_num ++;
+    Onload_imgs_url[index] = 'not find';
+    if((have_num+error_num >= step_loadnum || slider_images_url.length == (have_num+error_num)) && canshow == true)
+    {   
+        canshow = false;
+        if(have_num == 0)
+            return;
+        var end_titletime = new Date();
+        end_titletime = end_titletime.getTime();
+        if(end_titletime-begin_titletime>7000)
+        {
+            show1();
+        }
+        else
+        {
+            var dis_titletime = end_titletime-begin_titletime;
+            dis_titletime = 7000- dis_titletime;
+            timeout5 = setTimeout(show1,dis_titletime);
+        }
+
+    }
+}
+function image_onload(event)
+{
+    // console.log(this.complete);
+    if(reshow == true)
+        return;
+    var img = event.target;
+    var index = img.index;
+    if(index <step_loadnum)
+        have_num ++ ;
+    Onload_imgs_url[index] = img.src;
+    image_size_height[index] = img.height;
+    image_size_width[index] = img.width;
+
+    console.log(Onload_imgs_url[index]);
+    // console.log(have_num + '-' + error_num);
+    if((have_num + error_num >= step_loadnum || slider_images_url.length == (have_num+error_num)) && canshow == true)
+    {   
+        canshow = false;
+        if(have_num == 0)
+            return;
+        var end_titletime = new Date();
+        end_titletime = end_titletime.getTime();
+        if(end_titletime-begin_titletime>7000)
+        {
+            show1();
+        }
+        else
+        {
+            var dis_titletime = end_titletime-begin_titletime;
+            dis_titletime = 7000- dis_titletime;
+            timeout5 = setTimeout(show1,dis_titletime);
+        }
+
+    }
+}
+function showtitle()
+{
+
+    begin_titletime = new Date();
+    begin_titletime = begin_titletime.getTime();
+    setword();
+    id('pagetitle').style.display = 'block';
+    id('pageword1').style.display = 'block';
+    id('pageword2').style.display = 'block';
+    id('pagewordin1').style.display = 'block';
+    id('pagewordin2').style.display = 'block';
+    id('title1').style.display = 'block';
+    id('title11').style.display = 'block';
+
+}
+
+function setword()
+{
+    // if(reshow == true)
+    //     return;
+    var line = id('titleline');
+    id('titleword1').innerHTML = e_desc;
+    id('titleword2').innerHTML = e_desc;
+
+    line.style.webkitAnimation = 'titleline1 1s linear both';
+
+    timeout8 = setTimeout(time6,1200);
+
+}
+
+function time6()
+{
+    id('titleline').style.webkitAnimation = 'titleline2 5s linear both';
+    id('pageword1').style.webkitAnimation = 'pageword1 1s linear 0s both';
+    id('pagewordin1').style.webkitAnimation = 'pagewordin1 1s linear 0s both';
+    id('pageword2').style.webkitAnimation = 'pagewordin1 1s linear 2s both';
+    id('pagewordin2').style.webkitAnimation = 'pageword1 1s linear 2s both';
+    timeout7 = setTimeout(time7,4000)
+}
+function time7()
+{
+    id('titleline').style.webkitAnimation = 'titleline3 1.2s linear both';
+    id('title1').style.webkitAnimation = 'title1 1.2s linear both';
+    id('title11').style.webkitAnimation = 'title11 1.2s linear both';
+    id('pagetitle').style.webkitAnimation  = 'titlefadeout 0.5s 1.5s linear both';
+}
+function show1()
+{
+    if(reshow == true)
+        return;
+    id('page4s').style.webkitAnimation = 'page4hout 1s ease-in both';
+    id('page4h').style.webkitAnimation = 'page4hout 1s ease-in both';
+    id('cafe').style.webkitAnimation = 'cafeout 1s ease-in both';
+    id('dou1').style.webkitAnimation = 'dou1out 1s ease-in both';
+    id('dou2').style.webkitAnimation = 'dou2out 1s ease-in both';
+    id('word2').style.webkitAnimation = 'word2move 1s linear both';
+
+    id('yezi').style.display = 'block';
+    id('word1').style.display = 'block';
+
+    if(image_url_index == Onload_imgs_url.length)
+        image_url_index = 0;
+    setImage('11');
+    image_url_index++;
+    if(image_url_index == Onload_imgs_url.length)
+        image_url_index = 0;
+    setImage('12');
+    image_url_index++;
+
+    id('yezi').style.webkitAnimation = 'yeziin 1.5s ease-out both';
+    id('word1').style.webkitAnimation = 'word1move 1.5s linear both';
+    id('page11s').style.webkitTransformOrigin = '50% 50%';
+    id('page12s').style.webkitTransformOrigin = '50% 50%';
+    id('page11s').style.webkitAnimation = 'page11hin 1.5s ease-out both';
+    id('page12s').style.webkitAnimation = 'page12hin 1.5s ease-out both';
+    id('page11h').style.webkitTransformOrigin = '50% 50%';
+    id('page12h').style.webkitTransformOrigin = '50% 50%';
+    id('page11h').style.webkitAnimation = 'page11hin 1.5s ease-out both';
+    id('page12h').style.webkitAnimation = 'page12hin 1.5s ease-out both';
+
+    timeout1 = setTimeout(show2,4000)
+}
+
+function show2()
+{
+    if(reshow == true)
+        return;
+    id('yezi').style.webkitAnimation = 'yeziout 1s linear both';
+    id('page11s').style.webkitAnimation = 'page11hout 1.2s ease-in both';
+    id('page12s').style.webkitAnimation = 'page12hout 0.8s ease-in both';
+    id('page11h').style.webkitAnimation = 'page11hout 1.2s ease-in both';
+    id('page12h').style.webkitAnimation = 'page12hout 0.8s ease-in both';
+    id('hudie').style.display = 'block';
+
+    id('qi').style.webkitAnimation = '';
+
+    if(image_url_index == Onload_imgs_url.length)
+        image_url_index = 0;
+    setImage('2');
+    image_url_index++;
+
+    id('page2h').style.webkitAnimation = 'page2sin 1.5s ease-out both';
+    id('page2s').style.webkitAnimation = 'page2sin 1.5s ease-out both';
+    id('hudie').style.webkitAnimation = 'hudie 6s linear both';
+    id('chishang').style.webkitAnimation = 'chibang 6s linear infinite';
+    id('chixia').style.webkitAnimation = 'chibang 6s linear infinite';
+    id('chishangying').style.webkitAnimation = 'chibang 6s linear infinite';
+    id('chixiaying').style.webkitAnimation = 'chibang 6s linear infinite';
+
+    timeout2 = setTimeout(show3,4000);
+}
+
+function show3()
+{
+    if(reshow == true)
+        return;
+    id('page2h').style.webkitAnimation = 'page2sout 1.2s ease-in both';
+    id('page2s').style.webkitAnimation = 'page2sout 1.2s ease-in both';
+    id('word1').style.webkitAnimation = 'word2move 1s linear both';
+    id('word2').style.webkitAnimation = 'word3move 1s 1s linear both';
+
+    id('paper').style.display = 'block';
+    id('pan').style.display = 'block';
+
+    if(image_url_index == Onload_imgs_url.length)
+        image_url_index = 0;
+    setImage('31');
+    image_url_index++;
+    if(image_url_index == Onload_imgs_url.length)
+        image_url_index = 0;
+    setImage('32');
+    image_url_index++;
+
+    id('page31s').style.webkitAnimation = 'page31hin 1.5s 0.2s ease-out both';
+    id('page32s').style.webkitAnimation = 'page32hin 1.5s 0.2s ease-out both';
+    id('page31h').style.webkitAnimation = 'page31hin 1.5s 0.2s ease-out both';
+    id('page32h').style.webkitAnimation = 'page32hin 1.5s 0.2s ease-out both';
+    id('paper').style.webkitAnimation = 'paperin 1.5s 0.8s ease-out both';
+    id('pan').style.webkitAnimation = 'panin 1.5s 1.2s ease-out both';
+
+    timeout3 = setTimeout(show4,4000);
+}
+function show4 ()
+{
+    if(reshow == true)
+        return;
+    id('pan').style.webkitAnimation = 'panout 1.5s ease-in both';
+    id('paper').style.webkitAnimation = 'paperout 1.5s ease-in both';
+    id('page31s').style.webkitAnimation = 'page31hout 1.6s ease-in both';
+    id('page32s').style.webkitAnimation = 'page32hout 2s ease-in both';
+    id('page31h').style.webkitAnimation = 'page31hout 1.6s ease-in both';
+    id('page32h').style.webkitAnimation = 'page32hout 2s ease-in both';
+
+    // id('page4s').style.display = 'block';
+    if(image_url_index == Onload_imgs_url.length)
+        image_url_index = 0;
+    setImage('4');
+    image_url_index++;
+
+    id('cafe').style.display = 'block';
+    id('dou1').style.display = 'block';
+    id('dou2').style.display = 'block';
+    id('hudie').style.webkitAnimation = '';
+
+    id('page4s').style.webkitAnimation = 'page4hin 1.9s 0.2s ease-out both';
+    id('page4h').style.webkitAnimation = 'page4hin 1.9s 0.2s ease-out both';
+    id('dou11').style.webkitAnimation = 'douzhuan 1.3s linear 1 0.5s both';
+    id('dou22').style.webkitAnimation = 'douzhuan 1s linear 1 0.7s both';
+    id('cafe').style.webkitAnimation = 'cafein 1.3s 0.5s ease-out both';
+    id('dou1').style.webkitAnimation = 'dou1in 1s 0.7s ease-out both';
+    id('dou2').style.webkitAnimation = 'dou2in 1.3s 0.5s ease-out both';
+    id('qi').style.webkitAnimation = 'qi 2.5s 1s linear both';
+
+    timeout4 = setTimeout(show1,4000);
+
+}
+var divwidth = {'11h':368,'11s':256,'12h':383,'12s':262,'2h':446,'2s':397,'31h':354,'31s':249,'32h':354,'32s':247,'4h':446,'4s':322};
+var divheight = {'11h':256,'11s':368,'12h':262,'12s':383,'2h':286,'2s':561,'31h':249,'31s':354,'32h':249,'32s':333,'4h':322,'4s':495};
+
+var get_pid = function(url){
+    var index1 = url.indexOf("?");
+    if(index1 != -1)
+    {
+        url = url.substr(0, index1);
+    }
+    return url.toString().substr(url.lastIndexOf("/") + 1);
+}
+function insertEnter(str,n){
+    var len = str.length;
+    var strTemp = '';
+    if(len > n){
+    strTemp = str.substring(0,n);
+    str = str.substring(n,len);
+    return strTemp+'\n'+str;
+    }else{
+    return str;
+    }
+}
+
+function setImage(idname)
+{
+    if(reshow == true)
+        return;
+    while(Onload_imgs_url[image_url_index] == 'not find' || Onload_imgs_url[image_url_index] == 'loading')
+    {
+        // console.log(Onload_imgs_url[image_url_index]);
+        if(image_url_index % step_loadnum == 0)
+        {
+            step_load();
+        }
+        image_url_index++;
+        if(image_url_index == Onload_imgs_url.length)
+            image_url_index = 0;
+    }
+
+    if(image_url_index % step_loadnum == 0)
+    {
+        step_load();
+    }
+    console.log('setimg:' + Onload_imgs_url[image_url_index]);
+
+    var img_bili = image_size_width[image_url_index]/image_size_height[image_url_index];
+    var div;
+    var div1;
+    var divname;
+
+    if(img_bili > 1)
+    {
+        divname = idname + 'h';
+        div = id('page'+idname+'h');
+        div1 = id('page'+idname+'s');
+        var word = id('word' + divname);
+    }
+    else  //竖
+    {
+        divname = idname + 's';
+        div = id('page'+idname+'s');
+        div1 = id('page'+idname+'h');
+        var word = id('word' + divname);
+    }
+
+    div.style.display = 'block';
+    div1.style.display = 'none';
+
+
+    var height = divheight[divname];
+    var width = divwidth[divname];
+
+    var img = id('img'+divname);
+
+    
+    var word_string = words[get_pid(Onload_imgs_url[image_url_index])];
+    if(word_string != undefined)
+    {   
+        word_string = word_string.replace(/[\n]/ig,''); 
+        
+        var word_length = word_string.length;
+        if(word_length <= 4)
+        {
+            word.style.fontSize = "24px";
+        }else {
+            if(img_bili > 1)
+                word.style.fontSize = "24px";
+            else
+                word.style.fontSize = "19px";
+            if(word_length > 10)
+                word_string = insertEnter(word_string, 5);
+        }
+        word.innerText = word_string;
+    }
+    else
+    {
+        word.innerText = "";
+    }
+
+    img.src = Onload_imgs_url[image_url_index];
+    // console.log(img.src);
+
+    if(img_bili > (width/height))
+    {
+        img.style.top = '0px';
+        img.style.height = height + 'px';
+        img.style.width = height*img_bili + 'px';
+        img.style.left = -((height*img_bili-width)/2)+'px';
+    }
+    else
+    {
+        img.style.left = '0px';
+        img.style.width = width+'px';
+        img.style.height = width/img_bili + 'px';
+        img.style.top = -((width/img_bili-height)/2) + 'px';
+    }
+}
+call_me(loadimages);
+function reload_scene()
+{
+    reshow = true;
+    loadimages();
+}
+</script>
+
+
+	<!-- <link type="text/css" rel="stylesheet" href="css/guanzhu.css?ver=3" />  -->
+	<link rel="stylesheet" type="text/css" href="./duanyuhan_files/buttonsdev.css">
+	<script type="text/javascript">
+
+		if(typeof(objid) === "undefined")
+		{
+			var objid = function(id)
+			{
+				return document.getElementById(id);
+			}
+		}
+
+		function random(min,max)
+		{
+		    return Math.floor(min+Math.random()*(max-min));
+		}
+
+		function share_url()
+		{
+
+			// if(editmode == false && (wxid == 'xinqing' || wxid == 'mofa' || wxid == 'youpin' || wxid == 'youmei' || wxid == 'xingfu' || wxid == 'sjyy' || wxid == 'keji' || wxid == 'youran' || wxid == 'donggan' || wxid == 'dongtai') )
+			// {
+				// objid('guanzhu_container').style.display = 'block';
+			// }
+
+			var locationurl = window.location.href;
+			if(locationurl.indexOf('hidden')!=-1)
+			{
+				objid('guanzhu_container').style.display = 'none';
+			}
+
+			if(locationurl.indexOf('noshow')!=-1)
+			{
+				objid('guanzhu_container').style.display = 'none';
+			}
+
+			if(locationurl.indexOf('more=true')!=-1)
+			{
+				objid('morexiangce').style.display = 'block';
+				if(!tbssaveoff)
+				{
+					objid('savepic').style.display = 'block';
+				}
+			}
+
+			// objid('guanzhu_container').style.display = 'none';
+			var index = random(0, 5);
+			index = index>=5?4:index;
+			// var index = 0;
+
+			// if(((e_bookid == 'KPFArkq_BczWB-JZomFBnzTU-XRIgcos' && wxid == 'chuanqi') || (e_bookid == 'dD2nhG888UwtloewAuQhNpNkAKLhhjMbPVmwpJ5UxaM' && wxid == 'kawa') ) && editmode == false && e_scene == 'qian')
+			// 	objid('fudai').style.display = 'block';
+
+
+			// if(wxid == 'youyi' || shareid == 'youyi')
+			// {
+			// 	return "http://"+wxid+index+".kawabody.cn/kphoto/doubleshowbook.php?bookid=" + e_bookid + "&wxid=" + wxid + '&shareid=' + shareid;
+			// }
+			var urlname = '.kagirl.cn';
+			if(locationurl.indexOf('kawabody')!=-1)
+			{
+				urlname = '.kawabody.cn';
+			}
+
+			// if(e_bookid == 'KPFArkq_BcwZfjCqkKubod2ZRYlNdNpb' && wxid == 'manman')
+			// {
+			// 	var index = random(0, 5);
+			// 	return "http://manman"+index+".kawabody.cn/kphoto/doublebook.php?bookid=" + e_bookid + "&wxid=" + wxid + '&shareid=' + shareid+ "&onmake=" + onmake;
+			// }
+
+
+			if((wxid == 'xinqing' || wxid == 'liti' || wxid == 'dongtai'  || wxid == 'shiguang' || wxid == 'xuanmei' || wxid == 'zuimei' || wxid == 'chuangyi' || wxid == 'jingdian' || wxid == 'huoli' || wxid == 'quwei' || wxid == 'guangying' || wxid == 'qingling' || wxid == 'yywm' || wxid == 'kuaiyi' )&& locationurl.indexOf('showid')!=-1)
+			{
+				return "http://"+wxid+index+urlname+"/kphoto/doublebook.php?showid="+wxid+"&bookid=" + e_bookid + "&wxid=" + wxid + '&shareid=' + shareid + "&onmake=" + onmake;
+			}
+			if(shareid == "xuandong" && location.href.indexOf("app=xdxj") != -1)
+			{
+				return "http://"+wxid+index+urlname+"/kphoto/doublebook.php?bookid=" + e_bookid + "&wxid=" + wxid + '&shareid=' + shareid + "&app=xdxj"+ "&onmake=" + onmake;
+			}
+
+			return "http://"+wxid+index+urlname+"/kphoto/doublebook.php?bookid=" + e_bookid + "&wxid=" + wxid + '&shareid=' + shareid+ "&onmake=" + onmake;
+
+		}
+
+		function share_img()
+		{
+			var url = slider_images_url[0];
+			var index = url.indexOf("?");
+			if(index != -1)
+			{
+				return url.substr(0, index);
+			}
+			return url;
+		}
+
+		function on_weixin_share()
+		{
+			if(!wx)
+			{
+				return;
+			}
+			try{
+				wx.hideAllNonBaseMenuItem();
+				// var index = random(0, 5);
+				// console.log('wxshow' + index);
+				// if(e_bookid == 'KPFArkq_BcwZfjCqkKubod2ZRYlNdNpb' && wxid == 'manman' && index != 0)
+				// {
+				// 	wx.showMenuItems({
+				// 	    menuList: ["menuItem:share:qq", "menuItem:share:QZone", "menuItem:favorite", "menuItem:profile", "menuItem:refresh", "menuItem:copyUrl"] // 要显示的菜单项，所有menu项见附录3
+				// 	});						
+				// }
+				// else if(e_bookid == 'dD2nhG888UwSF8zBOtStmbqzioD8I1gWPVmwpJ5UxaM' && wxid == 'kawa' && index != 0)
+				// {
+				// 	wx.showMenuItems({
+				// 	    menuList: ["menuItem:share:qq", "menuItem:share:QZone", "menuItem:favorite", "menuItem:profile", "menuItem:refresh", "menuItem:copyUrl"] // 要显示的菜单项，所有menu项见附录3
+				// 	});						
+				// // }
+				// else
+				// {
+					wx.showMenuItems({
+					    menuList: ["menuItem:share:appMessage", "menuItem:share:timeline", "menuItem:share:qq", "menuItem:share:QZone", "menuItem:favorite", "menuItem:profile", "menuItem:addContact", "menuItem:refresh", "menuItem:copyUrl"] // 要显示的菜单项，所有menu项见附录3
+					});					
+				// }
+
+				var desc = e_desc.replace("<br>", "\n").replace("<br/>", "\n");
+
+
+
+				wx.onMenuShareAppMessage({
+				    title   : desc,
+				    desc    : '每一个精彩瞬间，我都想与你一同分享',
+				    link    : share_url(),
+				    imgUrl  : share_img(),
+				    type    : 'link',
+				    success: function () { 
+				            share_callback('message');
+				    },
+				    cancel: function () { 
+				    }
+				});
+
+
+
+
+				wx.onMenuShareTimeline({
+				    title  : desc,
+				    link   : share_url(),
+				    imgUrl : share_img(),
+				    success: function () { 
+				            share_callback('timeline');
+				    },
+				    cancel: function () { 
+				    }
+				});
+				wx.onMenuShareQQ({
+				    title   : '音乐相册',
+				    desc    : desc,
+				    link    : share_url(),
+				    imgUrl  : share_img(),
+				    type    : 'link',
+				    success: function () { 
+				            share_callback('message');
+				    },
+				    cancel: function () { 
+				    }
+				});
+				wx.onMenuShareQZone({
+				    title   : '音乐相册',
+				    desc    : desc,
+				    link    : share_url(),
+				    imgUrl  : share_img(),
+				    type    : 'link',
+				    success: function () { 
+				            share_callback('message');
+				    },
+				    cancel: function () { 
+				    }
+				});
+			}
+			catch(e){
+
+			}
+		}
+
+		function share_callback(type)
+		{
+			if(editmode == false)
+			{
+				// XMLHttp.sendReq('GET', 'adpv.php?click=8', '', function(){})
+			}
+			else
+			{
+
+				XMLHttp.sendReq('GET', 'tongjiscene.php?scene='+e_scene+'&type=edit', '', function(){});
+				// XMLHttp.sendReq('GET', 'adpv.php?click=9', '', function(){})
+				try{
+
+					if(tbssaveoff)
+					{
+						XMLHttp.sendReq('GET', 'adpv.php?click=saveshare', '', function(){
+					    });
+					}
+					else{
+						XMLHttp.sendReq('GET', 'adpv.php?click=nosaveshare', '', function(){
+					    });
+					}	
+				}catch(e){
+				}
+			}
+			var url = "editbook.php?type=" + type + "&bookid=" + e_bookid + "&wxid=" + wxid + "&shareid=" + shareid;
+
+			if(e_openid != null)
+			{
+				url = url + '&openid=' + e_openid;
+			}
+
+			url = url + "&desc=" + encodeURIComponent(e_desc);
+
+			if(e_music_url !== "")
+			{
+				url = url + "&music=" + encodeURIComponent(e_music_url);
+			}
+
+			url = url + "&scene=" +e_scene;
+
+			if(gotomake == 'make' &&  istiaozhuan != 'no')
+			{
+				location.href = url;
+				return;
+			}
+			else if(e_bookid == 'KPFArkq_BcwZfjCqkKubod2ZRYlNdNpb' && wxid == 'manman')
+			{
+				location.href = url;
+				return;
+			}
+
+			// if(shareid == "xuandong" && location.href.indexOf("app=xdxj") != -1)
+			// {
+			// 	location.href = "https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzIyNzA4NDU1Ng==#wechat_webview_type=1&wechat_redirect";
+			// 	return;
+			// }
+
+
+			if(editmode == true)
+			{
+				var print_scenes = {
+					"lovetrip" : 1,
+					"xiangyin" : 1,
+					"baby" : 1,
+					"naxienian" : 1,
+					"minion" : 1,
+					"maxituan" : 1,
+					"qingchun" : 1,
+					"shengri" : 1,
+					"shatan" : 1,
+					"summer" : 1
+				}
+				if(wxid == 'lzy' && print_scenes[e_scene] && slider_images_url.length >= 12)
+				{
+					XMLHttp.sendReq('GET',url, '', function(){});
+					location.href = 'printinfo.php?wxid='+wxid+'&bookid='+e_bookid+'&openid='+e_openid+'&scene='+e_scene;
+				}
+				else if((wxid == 'lzy') && (e_scene == 'naxienian' || e_scene == 'shengri') && slider_images_url.length>21)
+				{
+					XMLHttp.sendReq('GET',url, '', function(){});
+					location.href = 'http://nap.naturalgift.cc/nap/doc/print/buttons.php?wxid='+wxid+'&bookid='+e_bookid+'&openid='+e_openid+'&scene='+e_scene;
+				}
+				else
+					XMLHttp.sendReq('GET', url, '', function(){});
+					// location.href = url;
+
+			}
+
+			else
+			{
+				if(editmode == false && objid('guanzhu_container').style.display != 'none')
+				{
+					XMLHttp.sendReq('GET', url, '', function(){});
+				}
+				else
+				{
+					XMLHttp.sendReq('GET', url, '', function(){});	
+				}
+			
+			}
+			
+		}
+
+		function on_wx_music_init()
+		{
+			if(e_desc != "")
+			{
+				document.title = e_desc.replace("<br>", "\n").replace("<br/>", "\n");;
+			}
+			else
+			{
+				document.title = "音乐相册";
+			}
+			loadingdiv_out();
+			create_music();
+			on_weixin_share();
+			setTimeout(get_address, 500);
+
+			if((wxid == 'zuiquan' || wxid == 'youran' || wxid == 'zuoyyxc')&&editmode == false)
+				read_localstorage();
+			var locationurl = window.location.href;
+			// if(locationurl.indexOf('debug')!=-1)
+			// {
+				check_cookie();
+			// }
+
+			if(editmode == false)
+			{
+				var obj = document.getElementById("guanzhu_container");
+				obj.style.visibility = 'visible';
+				if(navigator.userAgent.match(/MicroMessenger/) == null)
+				{
+					// obj.innerHTML = "点我更多精彩";
+					obj.style.display = 'none';
+				}
+				// objid('guanzhu_container').style.display = 'none';
+				objid("jubao-click").style.display = "block";
+				//var obj = document.getElementById("kawa-youli");
+				//obj.style.visibility = 'visible';
+			}
+			var locationurl = window.location.href;
+			if(locationurl.indexOf('hidden')!=-1)
+			{
+				objid('guanzhu_container').style.display = 'none';
+			}
+
+
+			if(locationurl.indexOf('noshow')!=-1)
+			{
+				objid('guanzhu_container').style.display = 'none';
+			}
+
+			if(editmode == false && app == "xdxj")
+			{
+				objid('guanzhu_container').style.display = 'block';	
+			}
+			// if(isguangchang == 'guangchang')
+				objid('guanzhu_container').style.display = 'none';
+			if((isshow == 'show' || isshow == 'ma') && editmode == false)
+			{
+				objid('notice').style.display = 'block';
+			}
+			checkletter();
+
+			if(editmode == true && locationurl.indexOf('onmake=true')!=-1 && gotomake == 'make')
+			{
+				objid('backtomake').style.display = 'block';
+			}
+			else if( locationurl.indexOf('noshow=true') !=-1 || navigator.userAgent.match(/MicroMessenger/) == null )
+			{
+				objid('notice').style.display = 'none';
+				// objid('maimg').style.display = 'none';
+			}
+			else if(editmode == false && locationurl.indexOf('noshow=true') ==-1 && gotomake == 'make' && navigator.userAgent.match(/MicroMessenger/) != null)
+			{
+				objid('guanzhu_container').style.display = 'block';
+			}
+
+			if(tbssaveoff && isguangchang == "guangchang")
+			{
+				objid("saveoff").style.display = "block";
+			}
+		}
+
+		//创建存储cookie的函数
+		function set_cookie(value)
+		{
+			// value = "";
+			var locationurl = window.location.href;
+			if(locationurl.indexOf('kawabody')!=-1)
+				document.cookie = "books="+value+';domain=.kawabody.cn';
+			else
+				document.cookie = "books="+value+';domain=.kagirl.cn';
+			// alert('write:'+document.cookie);
+		}
+
+		function get_cookie(c_name)
+		{
+			// alert(document.cookie);
+			if(document.cookie.length > 0)
+			{	
+				var c_start = document.cookie.indexOf(c_name + '=');
+				if (c_start != -1)
+				{
+					c_start = c_start + c_name.length + 1;
+					var c_end = document.cookie.indexOf(';', c_start);
+					if(c_end == -1)
+						c_end = document.cookie.length;
+					return unescape(document.cookie.substring(c_start,c_end));
+				}
+
+			}
+			return '';
+		}
+
+
+		function check_cookie()
+		{
+
+
+			var thisbook = e_bookid + '&' + wxid;
+
+			books = get_cookie('books');
+			// alert(books);
+			console.log('cookie:'+books);
+			
+
+			var locationurl = window.location.href;
+
+			if(editmode == true || locationurl.indexOf('hidden') != -1)
+			{
+				objid('guanzhu_container').style.display = 'none';
+				if(objid('guanzhubtn'))
+				{
+					objid('guanzhubtn').style.display = 'none';
+					objid('reshowbtn').style.left = '163px';
+				}
+
+				//还没存进去
+				cookie_str = '';
+				if(books != null && books != '' && books.indexOf(thisbook) == -1)
+				{
+					cookie_str = books+ ':' + thisbook;
+
+				}
+				else if(books.indexOf(thisbook) != -1)
+				{
+					return;
+				}
+				else if(books == null || books == '')
+				{
+					cookie_str = thisbook;
+				}
+
+				set_cookie(cookie_str);
+			}
+			else
+			{
+				if(books !=null && books != '' && books.indexOf(thisbook) !=-1)
+				{
+					objid('guanzhu_container').style.display = 'none'
+					if(objid('guanzhubtn'))
+					{
+						objid('guanzhubtn').style.display = 'none';
+						objid('reshowbtn').style.left = '163px';
+					}
+				}
+				else
+				{
+					objid('guanzhu_container').style.display = 'block';
+				}
+			}
+
+
+			// objid('guanzhu_container').style.webkitAnimation = 'guangzhu_ani 0.8s linear infinite alternate';
+
+
+		}
+
+
+
+		call_me(on_wx_music_init);
+
+		//音乐播放
+
+		var music_header   = 'http://kawaweika.qiniudn.com/sound/';
+		var e_music_player = new Audio();
+
+		function play_music()
+		{
+		    if(e_music_url == '')
+		    {
+		        return ;
+		    }
+
+		    if(e_music_url.indexOf('qqmusic') != -1)
+		    {
+		    	mymusic = 'https://qnphoto.kagirl.cn/music/688042.m4a';
+		    }
+		    else
+		    {
+		    	mymusic = e_music_url;
+		    }
+
+		    e_music_player.src  = mymusic;
+		    e_music_player.loop = 'loop';
+
+		    console.log(e_music_player.src);
+		    e_music_player.onerror = function(){
+		    	if(e_music_url.indexOf("http://sound.kagirl.net") != -1)
+		    	{
+		    		var url = e_music_url.replace("http://sound.kagirl.net", "https://music.kagirl.cn");
+		    	}
+		    	else
+		    	{
+		    		var url = e_music_url.replace("https://music.kagirl.cn", "http://sound.kagirl.net");	
+		    	}
+
+		    	e_music_player.src = url;
+		    	e_music_player.play();
+		    	e_music_player.onerror = null;
+		    }
+		    
+		    e_music_player.play();
+		    
+		    //检查音乐是否缓冲成功
+		    setTimeout(function()
+		    {
+				var timeRanges = e_music_player.buffered;
+				var timeBuffered = timeRanges.end(timeRanges.length - 1);
+				var bufferPercent = timeBuffered /e_music_player.duration; 
+				console.log('music:'+bufferPercent);
+
+				if(isNaN(bufferPercent) || bufferPercent == 0)
+				{
+			    	if(e_music_url.indexOf("http://sound.kagirl.net") != -1)
+			    	{
+			    		var url = e_music_url.replace("http://sound.kagirl.net", "http://kawaweika.qiniudn.com");
+			    	}
+			    	else
+			    	{
+			    		var url = e_music_url.replace("https://music.kagirl.cn", "http://sound.kagirl.net");	
+			    	}
+			    	e_music_player.src = url;
+			    	e_music_player.play();
+				}
+		    },5000);
+
+
+		    if(objid('sound_image'))
+		    {
+		        objid('sound_image').style.webkitAnimation     = "zhuan 3s linear infinite";
+		    }
+		    
+		    bplay = 1;
+		}
+
+		function create_music()
+		{
+		    if(e_music_url == '')
+		    {
+		        return ;
+		    }
+		    
+		    play_music();
+
+		    sound_div = document.createElement("div");
+		    sound_div.setAttribute("ID", "cardsound");
+		    sound_div.style.cssText = "position:fixed;right:20px;top:25px;z-index:50;visibility:visible;";
+		    sound_div.onclick = switchsound;
+
+		    bg_htm  = "<img id='sound_image' src='https://tu.kagirl.cn/pic/music_note_big.png' style='-webkit-animation:zhuan 2s linear infinite'>";
+		    txt_htm = "<div id='music_txt' style='color:white;position:absolute;left:-40px;top:30px;width:60px'></div>"
+
+		    sound_div.innerHTML = bg_htm  + txt_htm;
+
+		    document.body.appendChild(sound_div);
+		} 
+
+		var bplay = 0;              
+		
+		function switchsound()
+		{
+		    au = e_music_player;
+		    ai = objid('sound_image');
+		    if(au.paused)
+		    {
+		        bplay = 1;
+		        au.play();
+		        ai.style.webkitAnimation     = "zhuan 2s linear infinite";
+		        objid("music_txt").innerHTML = "打开";
+		        objid("music_txt").style.visibility = "visible";
+		        setTimeout(function(){objid("music_txt").style.visibility="hidden"}, 2500);
+		    }
+		    else
+		    {
+		        bplay = 0;
+		        au.pause();
+		        ai.style.webkitAnimation     = "";
+		        objid("music_txt").innerHTML = "关闭";
+		        objid("music_txt").style.visibility = "visible";
+		        setTimeout(function(){objid("music_txt").style.visibility="hidden"}, 2500);
+		    }
+		}
+
+		function visit_guanzhu()
+		{
+			if(gotomake == 'make')
+			{
+				location.href = 'makebook.php?wxid='+ wxid;
+			}
+
+			if(navigator.userAgent.match(/MicroMessenger/))
+			{
+				// var sceneurl = 'adpv.php?click=7&scene='+e_scene+'&bookid='+e_bookid+'&wxid='+wxid;
+
+				// XMLHttp.sendReq('GET', sceneurl, '', function(){
+			 //    });
+				// XMLHttp.sendReq('GET', 'tongjiscene.php?scene='+e_scene+'&type=guanzhu', '', function(){});
+				// location.href = guanzhu_url;
+
+
+			}
+			else
+			{
+				// location.href = "http://article.mp.qq.com/index.php/preview/show?p=cd8c8cf61eb8c661b2163815a8f35a59&m=1442370092841159&i=0&t=c005e9f4d683429f35044a50ba3c4ab1&_wv=134217729&v=3&env=10003&mpu=33303236323133363530";
+			}
+		}
+
+		function gotoguanzhu()
+		{
+			if(isshow == 'show')
+				location.href = guanzhu_url;
+			else
+				openma();
+		}
+
+		function get_address()
+		{
+			if(location.href.indexOf("bookid=FalD4jB6GUtphMyZUexe9A") == -1 && editmode == false)
+			{
+				url = "getip.php?";
+				//XMLHttp.sendReq('GET', url, '', get_address_callback);
+			}
+		}
+		function get_address_callback(objXMLHttp)
+		{
+			if(objXMLHttp.responseText.indexOf('深圳') != -1)
+			{
+				objid('guanzhu_container').style.webkitAnimation = "aa_out_bounce_left 0.5s .2s ease both";
+				var obj = objid('shenzhen');
+				obj.style.visibility = "visible";
+				obj.style.webkitAnimation = "aa_in_bounce_center 0.5s .2s ease both";
+				obj.href = "http://photo.kagirl.cn/kphoto/showbook.php?bookid=FalD4jB6GUtphMyZUexe9A&wxid=zhi&fromsz=true";
+			}
+		}
+
+	function close_searchmusic()
+	{
+		objid('search_music').style.display = 'none';
+		objid('search_music_result_div').innerHTML = '';
+		e_music_player.play();
+		reflush();
+	}
+	function search_musicshow()
+	{
+		objid('search_music').style.display='block';
+		var width = document.body.clientWidth;
+		var height = document.body.clientHeight;
+
+		var div_height = 500/(width/height);
+		objid('search_music_result').style.height = div_height-170 +'px';
+
+	}
+	add_music_xml = new XMLHttpRequest();
+	function submit_addmusic () {
+
+		var musicname = objid('music_name').value;
+		if(musicname == null || musicname == '')
+		{
+			alert('音乐名称不能为空！');
+		}
+		else
+		{
+			var url = 'music_feedback.php?musicname='+musicname;
+			add_music_xml.open('GET',url,true);
+			add_music_xml.onreadystatechange = add_music_callback;
+			add_music_xml.setRequestHeader('Content-type','application/x-www-form-urlencoded'); 
+			add_music_xml.send(null);
+		}
+	}
+	function trim(str)
+	{ 
+		return str.replace(/(^\s*)|(\s*$)/g,'');
+	} 
+	function add_music_callback () {
+		if (add_music_xml.readyState == 4) 
+		{
+			if (add_music_xml.status== 200)
+			{
+				var result = add_music_xml.responseText;
+				console.log(result);
+				if(result.indexOf('1'))
+				{
+					objid('add_music_result').style.display = 'block';
+				}
+				else
+					alert('提交失败，请稍后再试。')
+			}
+			// else
+			// 	alert('提交失败，请稍后再试。');
+		}
+		// else
+		// {
+		// 	alert('提交失败，请稍后再试。');
+		// }
+	}
+	music_xml = new XMLHttpRequest();
+	function search_music () 
+	{
+		objid('search_music_result_div').innerHTML = '';
+		objid('search_music_notice').style.display = 'block';
+
+		var word = objid('search_musicname').value;
+		word = trim(word);
+		if(word == ''|| word == null || word == undefined)
+		{
+			alert('输入不能为空');
+		}
+		word = encodeURIComponent(word);
+
+		// if(wxid == 'meiwen')
+		// {
+		// 	// url = 'http://photo.kagirl.cn/music/189/search.php?keyword='+word;
+		// 	url = 'http://photo.kagirl.cn/music/search.php?music='+word;
+			
+		// 	objid('search_music_result_div').style.display = 'none';
+		// }
+		// else 
+		// {
+			url = '/music/search.php?music='+word;
+			// url = 'http://photo.kagirl.cn/kphoto/musicsearch.php?music='+word;
+		// }
+		
+		music_xml.open('GET',url, true);
+		music_xml.onreadystatechange = SearchMusic_onCallback;
+		music_xml.setRequestHeader('Content-type', 'application/x-www-form-urlencoded'); 
+		music_xml.send(null);
+
+	}
+
+	function SearchMusic_onCallback()
+	{
+		
+		if(music_xml.readyState ==4)
+		{
+			if(music_xml.status == 200)
+			{
+				var result = music_xml.responseText;
+				result = JSON.parse(result);
+				var obj = objid('search_music_result_div');
+				// alert(result.length)
+				if(result.length == undefined || result.length == 0)
+				{	
+					var music_value = objid('search_musicname').value;
+					music_value = trim(music_value);
+					obj.innerHTML = '<div style="line-height:30px;margin:50px 10px 10px 10px;font-size:16px;"><p style="font-size:22px;line-height30px;">找不到与<b>"'+music_value+'"</b>相关音乐</p></div>';
+					obj.style.display = 'block';
+				}
+				else
+				{
+					var htm_txt = '';
+					for(var i=0;i<result.length;i++)
+					{
+						htm_txt += '<div class="e-mp3box-item"><div class="e-mp3box-item-img"><img src="https://tu.kagirl.cn/icon/yinfu.png"></div><div id="search_music_result_text" class="e-mp3box-item-title" onclick="search_music_title_click('+"'"+result[i]['url']+"'"+','+i+')">'+result[i]['title']+'</div><div id="search_music_btn'+i+'" class="search-mp3box-item-ok" id="search-music-ok-'+i+'" onclick="search_music_select('+"'"+result[i]['musicname']+"'"+','+i+')">确定</div></div>';
+					}
+					obj.innerHTML = htm_txt;
+					obj.style.display = 'block';
+			// htm_txt += '<div class="e-mp3box-item-img"  id="e-music-img-'+(i+oks_num)+'"><img src="https://tu.kagirl.cn/icon/yinfu.png"></div>';
+
+			// htm_txt += '<div class="e-mp3box-item-title" onclick="e_music_title_click(\''+url+'\','+(i+oks_num)+')">'+title+'</div>';
+			
+			// htm_txt += '<div class="e-mp3box-item-ok" id="e-music-ok-'+(i+oks_num)+'" onclick="e_music_select(\''+musicname+'\')">确定</div>';
+
+			// 		var str = '<div class="e-mp3box-item-img"><img src="https://tu.kagirl.cn/icon/yinfu.png"></div><div id="search_music_result_text" class="e-mp3box-item-title" onclick="search_music_title_click('+"'"+result['url']+"'"+')">'+result['title']+'</div><div id="search_music_result_btn" class="e-mp3box-item-ok" id="e-music-ok-0" onclick="search_music_select('+"'"+result['musicname']+"'"+')">确定</div>';
+			// 		obj.innerHTML = str;
+			// 		obj.style.display = 'block';					
+				}
+
+				// objid('search_music_result_text').innerHTML = result['title'];
+				// objid('search_music_result_text').onclick="e_music_title_click('"+result['url']+"',0)";
+				// objid('search_music_result_btn').onclick = "e_music_select('"+result['musicname']+"')";
+				// objid('search_music_result').innerHTML = result;
+			}
+			else
+			{
+				console.log('Error: '+ music_xml.status)
+			}
+		}
+
+		objid('search_music_result_div').style.display = 'block';
+		objid('search_music_notice').style.display = 'none';
+	}
+	function search_music_title_click(url,index)
+	{
+		var oks = document.getElementsByClassName('search-mp3box-item-ok');
+		
+		for(var i=0;i<oks.length;i++)
+		{
+			oks[i].style.display = 'none';
+		}
+		objid('search_music_btn'+index).style.display = 'block';
+		// objid('e-music-ok-' + index).style.display = 'block';
+		//objid('e-music-img-' + index).style.webkitAnimation = 'zhuan 2.5s linear infinite';
+
+		if(e_music_player != null)
+		{
+		    e_music_player.pause();
+
+		    if(objid('sound_image'))
+		    {
+		        objid('sound_image').style.webkitAnimation = "";
+		    }
+		}
+
+		if(objid('e-player') == null)
+	    {
+	        var player  = document.createElement('audio');
+	        player.id   = 'e-player';
+	        player.src  = url;
+	        player.loop = 'loop';
+	        player.play();
+	        document.body.appendChild(player);
+	    }
+		else if(objid('e-player').src == url)
+		{
+		    if(objid('e-player').paused)
+		    {
+		        objid('e-player').play();
+		    }
+		    else
+		    {
+		        objid('e-player').pause();
+				objid('e-music-img-' + index).style.webkitAnimation = '';
+		    }
+		}
+		else
+		{
+		    objid('e-player').src = url;
+		    objid('e-player').play();
+		}
+	}
+
+	function search_music_select(url)
+	{
+		objid('search_music').style.display = 'none';
+		e_music_url = url;
+
+		if(typeof(reload_scene) == "undefined")
+		{
+			var url = "editbook.php?";
+		    url	= url + 'type=set_music';
+		    url	= url + "&openid=" + e_openid;
+		    url	= url + "&bookid=" + e_bookid;
+		    url	= url + "&music=" + encodeURIComponent(e_music_url);
+		    url = url + "&wxid=" + wxid;
+
+		    XMLHttp.sendReq('GET', url, '', function(){
+		    	location.reload();
+		    });
+		}
+		else
+		{
+			tool_close();
+
+			if(e_music_player)
+			{
+				if(!objid('cardsound'))
+				{
+					create_music();
+					e_music_player.play();
+				}
+				
+				e_music_player.src = objid('e-player').src;
+				e_music_player.play();
+			}
+			else
+			{
+				create_music();
+			}
+
+			e_close_wind();
+			var url = "editbook.php?";
+		    url	= url + 'type=set_music';
+		    url	= url + "&openid=" + e_openid;
+		    url	= url + "&bookid=" + e_bookid;
+		    url	= url + "&music=" + encodeURIComponent(e_music_url);
+		    url = url + "&wxid=" + wxid;
+
+		    XMLHttp.sendReq('GET', url, '', function(){
+		    	//location.reload();
+		    });
+		}
+	
+		
+	}
+	var bjubao_type = false;
+	function showjubaoimg (num) 
+	{
+		var img = objid('jubaoimg-'+num);
+		if(img.style.display == 'none')
+		{
+			
+			var imgarr = document.getElementsByClassName('jubao-radio');
+			for(var i=0;i<imgarr.length;i++)
+			{
+				imgarr[i].style.display = 'none';
+			}
+			img.style.display = 'block';
+			if(objid("jubao-detail").value >=5)
+			{
+				objid('jubao-submit').style.display = 'block';
+			}
+			bjubao_type = true;
+		}
+		else
+		{
+			img.style.display = 'none';
+			objid('jubao-submit').style.display = 'none';
+			bjubao_type = false;
+
+		}
+	}
+	function showjubaoimg2()
+	{
+		if(objid("jubao-detail").value.length >= 5 && bjubao_type)
+		{
+			objid('jubao-submit').style.display = 'block';
+		}
+		else
+		{
+			objid('jubao-submit').style.display = 'none';
+		}
+	}
+	function showjubao () 
+	{
+		if(localStorage.getItem(e_bookid + wxid) == "1")
+		{
+			alert("您已经反馈过这个相册了");
+			return;
+		}
+		objid('jubao-content').style.display = 'block';		
+	}
+	function hidejubao ()
+	{
+		objid('jubao-content').style.display = 'none';
+	}
+	function submitjubao () 
+	{
+		if(objid("jubao-detail").value.length < 5)
+		{
+			alert("问题描述字数太少！");
+			return;
+		}
+		var img_arr = document.getElementsByClassName('jubao-radio');
+		var jubao_type = 0;
+		while(img_arr[jubao_type].style.display == 'none')
+		{
+			jubao_type++;
+		}
+		alert('反馈提交成功！');
+		id('jubao-content').style.display = 'none';		
+		localStorage.setItem(e_bookid + wxid, 1);
+		var jubaourl = 'http://photo1.kagirl.cn/kphoto/jubao.php?bookid='+e_bookid+'&wxid='+wxid+'&type='+jubao_type + "&detail=" + encodeURIComponent(objid("jubao-detail").value);
+		XMLHttp.sendReq("get", jubaourl, "", function(objXMLHttp){
+		});
+	}
+	function visit_guanggao()
+	{
+	    window.location.href = 'adpv.php?click=6';
+	}
+	function visit_sousuo()
+	{
+
+	}
+	function write_localstorage()
+	{
+		console.log('write');
+		objid('like_div').onclick = function(){};
+
+
+		var url = 'submit_like.php?bookid='+e_bookid+'&wxid='+wxid;
+		XMLHttp.sendReq('GET',url,'',function()
+		{
+			objid('like_heart').src='https://qnphoto.kagirl.cn/zan/like0.png';
+			objid('like_heart').style.webkitAnimation = 'heart_beating 0.4s linear 4 alternate';
+			objid('heart1').style.display = 'block';
+			objid('heart2').style.display = 'block';
+			objid('heart3').style.display = 'block';
+			objid('heart1').style.webkitAnimation = 'heart1_moving 1.6s 0.2s linear both';
+			objid('heart2').style.webkitAnimation = 'heart2_moving 1.6s 0.2s linear both';
+			objid('heart3').style.webkitAnimation = 'heart3_moving 1.6s 0.2s linear both';
+			objid('like_num').innerHTML = zan_num +1;
+
+			// var day = new Date();
+			// var daystr = day.get
+			var sendstr = e_bookid + wxid + date;
+
+			if(localStorage.likestr == null || localStorage == undefined)
+			{
+				var like_arr = [];
+			}
+			else
+			{
+				var like_arr = JSON.parse(localStorage.likestr);
+			}
+				
+			if(like_arr.length == 50)
+			{
+				like_arr.pop()
+			}
+			like_arr.unshift(sendstr);
+
+			likestr = JSON.stringify(like_arr);
+			// console.log(likestr);
+			localStorage.likestr = likestr;
+
+		})
+
+
+	}
+
+	function nottofeedback()
+	{
+		if(bjubao_type == false)
+			alert('您已经反馈过这个相册了')
+		else
+			alert('反馈必须不少于5个字');
+	}
+
+	function read_localstorage()
+	{
+
+		if(editmode == false )
+		{
+			objid('like_div').style.display = 'block';
+		}
+		console.log(localStorage.likestr);
+		if(localStorage.likestr == null || localStorage == undefined)
+		{
+			objid('like_div').onclick = write_localstorage;
+		}
+		else
+		{
+			var like_arr = JSON.parse(localStorage.likestr);
+			var sendstr = e_bookid + wxid + date;
+			console.log(sendstr);
+			for(var i=0;i<like_arr.length;i++)
+			{
+				if(like_arr[i] == sendstr)
+				{
+					objid('like_heart').src = 'https://qnphoto.kagirl.cn/zan/like0.png';
+					break;
+				}
+				else if(i == like_arr.length-1)
+				{
+					objid('like_div').onclick = write_localstorage;
+					// console.log('canclick');
+				}
+			}
+		}
+		// console.log(objid("like_div").onclick);
+		objid('like_num').innerHTML = zan_num;
+	}
+
+	function visit_guangchang()
+	{
+		var locationurl = location.href;
+		if(shareid != '' && shareid != undefined)
+		{
+			if(locationurl.indexOf('hidden') != -1)
+			{
+				if(locationurl.indexOf('menu') != -1)
+					location.href = 'http://photo.kagirl.cn/kphoto/menu.php?wxid='+shareid;
+				else
+					location.href = 'http://photo.kagirl.cn/kphoto/more1.php?back=true&wxid='+shareid;
+			}
+			else
+				location.href = 'http://photo.kagirl.cn/kphoto/more1.php?back=true&show=true&wxid='+shareid;
+		}
+	}
+	function loadingdiv_out()
+	{
+		objid('loadingdiv').style.webkitAnimation = 'fadeout 0.3s linear both';
+		if(navigator.userAgent.indexOf('Windows Phone')!=1)
+		{
+			objid('loadingdiv').style.display = 'none';
+		}
+
+		setTimeout(function()
+		{
+			objid('loadingdiv').style.display = 'none';
+		},400)
+	}
+	function checkletterbtn()
+	{
+		XMLHttp.sendReq("get", 'tongjiscene.php?type=baoguang', "", function(objXMLHttp){
+			});
+	}
+	function clickbtn()
+	{
+		XMLHttp.sendReq("get", 'tongjiscene.php?type=click', "", function(objXMLHttp){
+		});
+	}
+
+	function openletter()
+	{
+		objid('letterdiv').style.display = 'block';
+		objid('letter').src='http://qnimg.kagirl.cn/guangchang/letter1.png';
+		objid('letter').style.height = '120px';
+		objid('letter').style.top = '-40px';
+		if(objid('letternotice').style.display = 'block')
+			clickbtn();
+		objid('letternotice').style.display = 'none';
+		setletter();
+		// clickbtn();
+	}
+	function closeletter()
+	{
+		objid('letterdiv').style.display = 'none';
+		objid('letterpicdiv').style.display = 'none';
+		objid('letter').src='http://qnimg.kagirl.cn/guangchang/letter.jpg';
+		objid('letter').style.height = '80px';
+		objid('letter').style.top = '0px';
+	}
+	var newletter = '20160919';
+	function checkletter()
+	{
+		return;
+		var locationurl = window.location.href;
+		if(objid('guanzhu_container').style.display == 'none' && locationurl.indexOf('more') == -1 &locationurl.indexOf('hidden') == -1 )
+		{
+			if(editmode == false && navigator.userAgent.match(/MicroMessenger/) != null)
+			{
+				var myid = wxid;
+				if(shareid !='')
+					myid = shareid;
+				XMLHttp.sendReq("get", 'checkshow.php?wxid='+myid, "", function(objXMLHttp)
+				{
+					var txt = objXMLHttp.responseText;
+					if(txt == '1' || txt == 1)
+					{
+						var lastletter = get_cookie('letterid');
+						if(lastletter != newletter)
+						{
+							objid('letternotice').style.display = 'block';
+							checkletterbtn();
+						}
+						objid('letterpicdiv').style.display = 'block';
+
+						// objid('letterurl').href = 'http://'+myid+'0.kagirl.cn/kphoto/showbook.php?bookid=Fpx5HcVlzcrVub7Jl87_OYZwmGOha7Jd&wxid=ziji&more=redpoint&hidden&shareid='+myid;
+						XMLHttp.sendReq("get", 'getname.php?id='+myid, "", function(objXMLHttp){
+							var txt = objXMLHttp.responseText;
+							objid('lettername').innerHTML = "来自："+txt+'&nbsp;&nbsp;&nbsp;';
+						});
+					}
+
+				});
+
+			}
+		}
+
+	}
+
+	function setletter()
+	{
+		var lastletter = get_cookie('letterid');
+		
+		if(lastletter != newletter)
+		{
+			document.cookie = "letterid="+newletter+';domain=.kagirl.cn';
+		}
+	}
+	function saveoff()
+	{
+		location.href = "saveoffstat.php?type=guangchang&bookid=" + e_bookid + "&wxid=" + wxid + "&shareid=" + shareid;
+	}
+	function savepic()
+	{
+		var locationurl = location.href;
+		location.href = locationurl.replace('showbook','psinfo1');
+
+	}
+	function openma()
+	{
+		objid('madiv').style.display = 'block';
+		objid('erweima').src='https://qnphoto.kagirl.cn/ma/'+wxid+'.png';
+
+	}
+	function closema()
+	{
+		objid('madiv').style.display = 'none';
+	}
+	</script>
+
+
+<div id="loadingdiv" style="animation: fadeout 0.3s linear both; display: none;">
+	<div class="loadingword">相册正在加载中<br>请稍等……</div>
+</div>
+<div id="notice" onclick="gotoguanzhu()" style="display: none;">
+	更多
+</div>
+<div id="letterpicdiv">
+	<!-- <img id='letter' src='http://qnimg.kagirl.cn/guangchang/letter.jpg' onclick='openletter()'> -->
+	<div id="letternotice">1</div>
+</div>
+
+<img id="maimg" src="./duanyuhan_files/bbtn1.png" onclick="openma()">
+<div id="madiv">
+	<img id="erweima">
+	<div class="closema" onclick="closema()"></div>
+</div>
+<!--
+	<a id="shenzhen" style="visibility:hidden;text-align:center;line-height:30px;font-size:22px;position:fixed;bottom:20px;left:275px;width:200px;height:45px;z-index:10000;" class="large blue button" href="#">点我看深圳夜景</a>
+-->
+
+<!-- <script type="text/javascript" src="http://tajs.qq.com/stats?sId=49849725" charset="UTF-8"></script> -->
+<!-- <script type="text/javascript" src="http://tajs.qq.com/stats?sId=51790002" charset="UTF-8"></script> -->
+
+<div id="cardsound" style="position: fixed; right: 20px; top: 25px; z-index: 50; visibility: visible;"><img id="sound_image" src="./duanyuhan_files/music_note_big.png" style="-webkit-animation:zhuan 2s linear infinite"><div id="music_txt" style="color:white;position:absolute;left:-40px;top:30px;width:60px"></div></div></body></html>
