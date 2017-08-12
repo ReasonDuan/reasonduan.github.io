@@ -102,7 +102,7 @@
 <meta property="og:site_name" content="Reason&#39;s Blog">
 <meta property="og:description" content="提交本地项目到git上 1234567891011121314# 初始化仓库$git init# 给项目中所有文件添加git追踪$git add .# 提交项目到本地仓库$git commit -m &quot;commit first&quot;# 设置远程仓库，origin为别名$git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git# 推送项目到远">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-12T07:27:53.659Z">
+<meta property="og:updated_time" content="2017-08-12T07:49:28.614Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git 常用命令">
 <meta name="twitter:description" content="提交本地项目到git上 1234567891011121314# 初始化仓库$git init# 给项目中所有文件添加git追踪$git add .# 提交项目到本地仓库$git commit -m &quot;commit first&quot;# 设置远程仓库，origin为别名$git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git# 推送项目到远">
@@ -346,8 +346,7 @@
       
         <p><strong>提交本地项目到git上</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 初始化仓库</span></div><div class="line"><span class="variable">$git</span> init</div><div class="line"></div><div class="line"><span class="comment"># 给项目中所有文件添加git追踪</span></div><div class="line"><span class="variable">$git</span> add .</div><div class="line"></div><div class="line"><span class="comment"># 提交项目到本地仓库</span></div><div class="line"><span class="variable">$git</span> commit -m <span class="string">"commit first"</span></div><div class="line"></div><div class="line"><span class="comment"># 设置远程仓库，origin为别名</span></div><div class="line"><span class="variable">$git</span> remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git</div><div class="line"></div><div class="line"><span class="comment"># 推送项目到远程仓库</span></div><div class="line"><span class="variable">$git</span> push origin</div></pre></td></tr></table></figure>
-<hr>
-<p><strong>基础操作</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 查看状态</span></div><div class="line"><span class="variable">$git</span> status</div><div class="line"></div><div class="line"><span class="comment"># 查看版本库状态 [查看分支合并图] [简化内容] [简化版本号]</span></div><div class="line"><span class="variable">$git</span> <span class="built_in">log</span> [--graph] [--pretty=oneline] [--abbrev-commit]</div><div class="line"></div><div class="line"><span class="comment"># 查看操作记录</span></div><div class="line"><span class="variable">$git</span> reflog</div></pre></td></tr></table></figure></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><p><strong>基础操作</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 查看状态</span></div><div class="line"><span class="variable">$git</span> status</div><div class="line"></div><div class="line"><span class="comment"># 查看版本库状态 [查看分支合并图] [简化内容] [简化版本号]</span></div><div class="line"><span class="variable">$git</span> <span class="built_in">log</span> [--graph] [--pretty=oneline] [--abbrev-commit]</div><div class="line"></div><div class="line"><span class="comment"># 查看操作记录</span></div><div class="line"><span class="variable">$git</span> reflog</div></pre></td></tr></table></figure></p>
 <hr>
 <p><strong>版本回滚</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 版本回滚是从版本库回滚到工作区</span></div><div class="line"><span class="comment"># (HEAD^,HEAD^^ ... HEAD~100 到前一个，前两个...前100个) </span></div><div class="line"><span class="variable">$git</span> reset --hard HEAD^</div><div class="line"></div><div class="line"><span class="comment"># 用版本号回滚</span></div><div class="line"><span class="variable">$git</span> reset --hard ea3457</div></pre></td></tr></table></figure></p>
 <hr>
@@ -408,6 +407,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2017/08/12/docker-command/" rel="prev" title="Docker 常用命令">
+                Docker 常用命令 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -458,8 +461,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -474,7 +486,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -487,7 +499,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -498,6 +510,30 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/ReasonDuan" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.weibo.com/3173550820/profile" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      微博
+                    
+                </a>
+              </span>
+            
           
         </div>
 
@@ -512,6 +548,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text"></span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
