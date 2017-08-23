@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="镜像操作 12345678910111213141516171819202122232425262728293031# 查找镜像$docker search image_name# 下载镜像$docker pull image_name# 发布镜像$docker push image_name# 显示镜像列表$docker images# 删除镜像$docker rmi images#-f 强行删">
+<meta name="description" content="Docker常用操作，工作中常用命令收集。 启动容器 1234567891011# 交互式进入启动容器$docker run -t -i centos /bin/bash#-t 表示打开一个客户端#-i 表示发送返回信息到客户端# 服务式启动容器$docker run -d --name conname -p 58080:8080 -v /opt/app/logs:/opt/app/work/ap">
 <meta name="keywords" content="Docker">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Docker 常用命令">
 <meta property="og:url" content="http://yoursite.com/2017/08/12/docker-command/index.html">
 <meta property="og:site_name" content="Reason&#39;s Blog">
-<meta property="og:description" content="镜像操作 12345678910111213141516171819202122232425262728293031# 查找镜像$docker search image_name# 下载镜像$docker pull image_name# 发布镜像$docker push image_name# 显示镜像列表$docker images# 删除镜像$docker rmi images#-f 强行删">
+<meta property="og:description" content="Docker常用操作，工作中常用命令收集。 启动容器 1234567891011# 交互式进入启动容器$docker run -t -i centos /bin/bash#-t 表示打开一个客户端#-i 表示发送返回信息到客户端# 服务式启动容器$docker run -d --name conname -p 58080:8080 -v /opt/app/logs:/opt/app/work/ap">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-12T08:00:44.082Z">
+<meta property="og:updated_time" content="2017-08-23T00:58:14.046Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker 常用命令">
-<meta name="twitter:description" content="镜像操作 12345678910111213141516171819202122232425262728293031# 查找镜像$docker search image_name# 下载镜像$docker pull image_name# 发布镜像$docker push image_name# 显示镜像列表$docker images# 删除镜像$docker rmi images#-f 强行删">
+<meta name="twitter:description" content="Docker常用操作，工作中常用命令收集。 启动容器 1234567891011# 交互式进入启动容器$docker run -t -i centos /bin/bash#-t 表示打开一个客户端#-i 表示发送返回信息到客户端# 服务式启动容器$docker run -d --name conname -p 58080:8080 -v /opt/app/logs:/opt/app/work/ap">
 
 
 
@@ -113,7 +113,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Gemini',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
@@ -344,12 +344,13 @@
       
 
       
-        <p><strong>镜像操作</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 查找镜像</span></div><div class="line"><span class="variable">$docker</span> search image_name</div><div class="line"></div><div class="line"><span class="comment"># 下载镜像</span></div><div class="line"><span class="variable">$docker</span> pull image_name</div><div class="line"></div><div class="line"><span class="comment"># 发布镜像</span></div><div class="line"><span class="variable">$docker</span> push image_name</div><div class="line"></div><div class="line"><span class="comment"># 显示镜像列表</span></div><div class="line"><span class="variable">$docker</span> images</div><div class="line"></div><div class="line"><span class="comment"># 删除镜像</span></div><div class="line"><span class="variable">$docker</span> rmi images</div><div class="line"><span class="comment">#-f 强行删除</span></div><div class="line"></div><div class="line"><span class="comment"># 显示一个镜像的历史信息</span></div><div class="line"><span class="variable">$docker</span> <span class="built_in">history</span> image_name</div><div class="line"></div><div class="line"><span class="comment"># 查看镜像参数</span></div><div class="line"><span class="variable">$docker</span> inspect id/name:&lt;tag&gt;</div><div class="line"></div><div class="line"><span class="comment"># 修改镜像tag</span></div><div class="line"><span class="variable">$docker</span> tag id/name:&lt;tag&gt; name:tag</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment"># 镜像保存</span></div><div class="line"><span class="variable">$docker</span> save id/name:&lt;tag&gt; &gt; /home/name.tar</div><div class="line"></div><div class="line"><span class="comment"># 导入镜像</span></div><div class="line"><span class="variable">$docker</span> load &lt; /home/name.tar</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<hr>
+        <p>Docker常用操作，工作中常用命令收集。</p>
 <p><strong>启动容器</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 交互式进入启动容器</span></div><div class="line"><span class="variable">$docker</span> run -t -i centos /bin/bash</div><div class="line"><span class="comment">#-t 表示打开一个客户端</span></div><div class="line"><span class="comment">#-i 表示发送返回信息到客户端</span></div><div class="line"></div><div class="line"><span class="comment"># 服务式启动容器</span></div><div class="line"><span class="variable">$docker</span> run -d --name conname -p 58080:8080 -v /opt/app/logs:/opt/app/work/app1 imagename</div><div class="line"><span class="comment">#-d 后台启动镜像</span></div><div class="line"><span class="comment">#-p 将容器8080端口映射到本机58080端口</span></div><div class="line"><span class="comment">#-v 将容器/opt/app/logs目录映射到主机/opt/app/work/app1目录</span></div><div class="line"><span class="comment">#--name 容器运行名称</span></div></pre></td></tr></table></figure>
+<hr>
+<a id="more"></a>
+<p><strong>镜像操作</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 查找镜像</span></div><div class="line"><span class="variable">$docker</span> search image_name</div><div class="line"></div><div class="line"><span class="comment"># 下载镜像</span></div><div class="line"><span class="variable">$docker</span> pull image_name</div><div class="line"></div><div class="line"><span class="comment"># 发布镜像</span></div><div class="line"><span class="variable">$docker</span> push image_name</div><div class="line"></div><div class="line"><span class="comment"># 显示镜像列表</span></div><div class="line"><span class="variable">$docker</span> images</div><div class="line"></div><div class="line"><span class="comment"># 删除镜像</span></div><div class="line"><span class="variable">$docker</span> rmi images</div><div class="line"><span class="comment">#-f 强行删除</span></div><div class="line"></div><div class="line"><span class="comment"># 显示一个镜像的历史信息</span></div><div class="line"><span class="variable">$docker</span> <span class="built_in">history</span> image_name</div><div class="line"></div><div class="line"><span class="comment"># 查看镜像参数</span></div><div class="line"><span class="variable">$docker</span> inspect id/name:&lt;tag&gt;</div><div class="line"></div><div class="line"><span class="comment"># 修改镜像tag</span></div><div class="line"><span class="variable">$docker</span> tag id/name:&lt;tag&gt; name:tag</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment"># 镜像保存</span></div><div class="line"><span class="variable">$docker</span> save id/name:&lt;tag&gt; &gt; /home/name.tar</div><div class="line"></div><div class="line"><span class="comment"># 导入镜像</span></div><div class="line"><span class="variable">$docker</span> load &lt; /home/name.tar</div></pre></td></tr></table></figure>
 <hr>
 <p><strong>构建镜像</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$docker</span> build -t imagename Dockerfile_path</div></pre></td></tr></table></figure>
@@ -412,6 +413,32 @@
 
 
     <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微薄</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
       
     </div>
   </div>
@@ -556,7 +583,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
+    NexT.Gemini
   </a>
 </div>
 
@@ -603,6 +630,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -628,6 +658,12 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
 
 
   

@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -94,18 +94,18 @@
 
 
 
-<meta name="description" content="提交本地项目到git上 1234567891011121314# 初始化仓库$git init# 给项目中所有文件添加git追踪$git add .# 提交项目到本地仓库$git commit -m &quot;commit first&quot;# 设置远程仓库，origin为别名$git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git# 推送项目到远">
+<meta name="description" content="应用级git命令，只为满足日常工作所需。 提交本地项目到git上 1234567891011121314# 初始化仓库$git init# 给项目中所有文件添加git追踪$git add .# 提交项目到本地仓库$git commit -m &quot;commit first&quot;# 设置远程仓库，origin为别名$git remote add origin git@xx.xx.xx.xx:repos/xx">
 <meta name="keywords" content="Git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git 常用命令">
 <meta property="og:url" content="http://yoursite.com/2017/08/12/git-command/index.html">
 <meta property="og:site_name" content="Reason&#39;s Blog">
-<meta property="og:description" content="提交本地项目到git上 1234567891011121314# 初始化仓库$git init# 给项目中所有文件添加git追踪$git add .# 提交项目到本地仓库$git commit -m &quot;commit first&quot;# 设置远程仓库，origin为别名$git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git# 推送项目到远">
+<meta property="og:description" content="应用级git命令，只为满足日常工作所需。 提交本地项目到git上 1234567891011121314# 初始化仓库$git init# 给项目中所有文件添加git追踪$git add .# 提交项目到本地仓库$git commit -m &quot;commit first&quot;# 设置远程仓库，origin为别名$git remote add origin git@xx.xx.xx.xx:repos/xx">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-12T07:49:28.614Z">
+<meta property="og:updated_time" content="2017-08-23T00:55:20.055Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git 常用命令">
-<meta name="twitter:description" content="提交本地项目到git上 1234567891011121314# 初始化仓库$git init# 给项目中所有文件添加git追踪$git add .# 提交项目到本地仓库$git commit -m &quot;commit first&quot;# 设置远程仓库，origin为别名$git remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git# 推送项目到远">
+<meta name="twitter:description" content="应用级git命令，只为满足日常工作所需。 提交本地项目到git上 1234567891011121314# 初始化仓库$git init# 给项目中所有文件添加git追踪$git add .# 提交项目到本地仓库$git commit -m &quot;commit first&quot;# 设置远程仓库，origin为别名$git remote add origin git@xx.xx.xx.xx:repos/xx">
 
 
 
@@ -113,7 +113,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Gemini',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
@@ -344,7 +344,8 @@
       
 
       
-        <p><strong>提交本地项目到git上</strong></p>
+        <p>应用级git命令，只为满足日常工作所需。</p>
+<p><strong>提交本地项目到git上</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 初始化仓库</span></div><div class="line"><span class="variable">$git</span> init</div><div class="line"></div><div class="line"><span class="comment"># 给项目中所有文件添加git追踪</span></div><div class="line"><span class="variable">$git</span> add .</div><div class="line"></div><div class="line"><span class="comment"># 提交项目到本地仓库</span></div><div class="line"><span class="variable">$git</span> commit -m <span class="string">"commit first"</span></div><div class="line"></div><div class="line"><span class="comment"># 设置远程仓库，origin为别名</span></div><div class="line"><span class="variable">$git</span> remote add origin git@xx.xx.xx.xx:repos/xxx/xxx/xxx.git</div><div class="line"></div><div class="line"><span class="comment"># 推送项目到远程仓库</span></div><div class="line"><span class="variable">$git</span> push origin</div></pre></td></tr></table></figure>
 <h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><p><strong>基础操作</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 查看状态</span></div><div class="line"><span class="variable">$git</span> status</div><div class="line"></div><div class="line"><span class="comment"># 查看版本库状态 [查看分支合并图] [简化内容] [简化版本号]</span></div><div class="line"><span class="variable">$git</span> <span class="built_in">log</span> [--graph] [--pretty=oneline] [--abbrev-commit]</div><div class="line"></div><div class="line"><span class="comment"># 查看操作记录</span></div><div class="line"><span class="variable">$git</span> reflog</div></pre></td></tr></table></figure></p>
 <hr>
@@ -427,6 +428,32 @@
 
 
     <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微薄</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
       
     </div>
   </div>
@@ -596,7 +623,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
+    NexT.Gemini
   </a>
 </div>
 
@@ -643,6 +670,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -668,6 +698,12 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three.min.js"></script>
+
+  
+  <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
 
 
   
